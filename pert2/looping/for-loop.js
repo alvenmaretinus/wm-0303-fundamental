@@ -63,3 +63,5 @@ for (let i = 0; i < 5; i++) {
   triangle += '\n'
 }
 console.log(triangle)
+
+// ini contoh comment
