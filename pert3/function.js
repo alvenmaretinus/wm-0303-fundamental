@@ -69,3 +69,34 @@ console.log(number)
 console.log(number + 200)
 console.log(Math.pow(number, 2))
 console.log(test)
+
+
+// setTimeout ada 2 parameter
+// parameter 1: function yg mau dijalankan
+// parameter 2: waktu delay (dalam ms) - 1000 ms = 1 s
+
+// cara 1
+function printTulisan() {
+  console.log('kamu sudah menunggu 3 detik')
+}
+setTimeout(printTulisan, 3000)
+
+// cara 2
+setTimeout(function () {
+  console.log('test')
+}, 2000)
+
+
+// setInterval ada 2 parameter
+// parameter 1: function yg mau dijalankan
+// parameter 2: waktu delay (dalam ms) - 1000 ms = 1 s
+
+const interval = setInterval(function () {
+  console.log('1 detik telah berlalu')
+}, 1000)
+
+// challenge: setInterval jalanin cuma 3 kali
+function stop() {
+  clearInterval(interval)
+}
+setTimeout(stop, 3100)
